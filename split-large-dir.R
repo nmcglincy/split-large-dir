@@ -10,7 +10,7 @@ files = list.files(include.dirs = FALSE)
 # system call - move the first 100 files on the file list into the folder
 # 
 for (i in files[1:100]) {
-  system(paste("mv", i, paste("russ-pics-", a, "/", sep = ""), sep = " "))
+  system(paste("mv", i, paste("russ-pics-", a, sep = ""), sep = " "))
 }
 # counter + 1
 #
