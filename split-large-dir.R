@@ -23,8 +23,7 @@ while (length(list.files(include.dirs = FALSE)) > 100) {
 # 
 # Dealing with the leftovers:
 system(paste("mkdir ", "russ-pics-", a, sep = ""))
-files = list.files(pattern = ".{1}")
-files
+files = Sys.glob("*.*")
 for (i in files[1:length(files)]) {
   system(paste("mv", i, paste("russ-pics-", a, sep = ""), sep = " "))
 }
